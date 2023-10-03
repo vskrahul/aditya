@@ -1,11 +1,14 @@
 package khalidmughal.chapter3.declaration.bean;
 
+import java.util.List;
+
 public class Student extends Object {
     Integer studentId;
     String firstName;
     String lastName;
     String address;
 
+    // NOTE: following constructors are overloaded constructors
     public Student(int studentId, String firstName, String lastName, String address) {
         this.studentId = studentId;
         this.firstName = firstName;
@@ -59,6 +62,21 @@ public class Student extends Object {
                 this.lastName,
                 this.address);
         //return super.toString();
+    }
+
+    public static void printStudent(Student student) {
+        System.out.println(student);
+    }
+
+    public static void printStudent(List<Student> students) {
+        students.forEach(System.out::println);
+    }
+
+    public static void addStudent(Student student) {
+        // adding one student to database
+    }
+    public static void addStudent(List<Student> students) {
+        // adding more than one student to database
     }
 
     @Override
