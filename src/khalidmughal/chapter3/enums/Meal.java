@@ -22,6 +22,9 @@ public enum Meal {
          *  TOPIC: Extending Enum Types: Constant-Specific Class Bodies
          *   practice the given program
          *
+         *   HOME WORK - 3
+         *   complete Declaration chapter questions
+         *
          */
         this.hour = hour;
         this.min = min;
