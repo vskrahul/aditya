@@ -24,6 +24,8 @@ public class EnumTest {
         System.out.println("\n\nMEAL*****\n");
         System.out.println(Meal.BREAKFAST);
         System.out.println(Meal.DINNER);
+
+        System.out.println(MachineState.BLOCKED.canEnumImplementsInterface());
     }
 
 

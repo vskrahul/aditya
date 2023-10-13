@@ -1,14 +1,15 @@
 package khalidmughal.chapter3.enums;
 
-import java.lang.Enum;
-
-public enum MachineState {
+public enum MachineState implements EnumInterface {
     BUSY,
     IDLE, // new MachineState("IDLE", 1)
     BLOCKED;
+
+    @Override
+    public boolean canEnumImplementsInterface() {
+        return true;
+    }
 }
-
-
 
 /*
 
