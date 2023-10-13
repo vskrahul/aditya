@@ -5,7 +5,7 @@ import java.lang.Enum;
 public enum MachineState {
     BUSY,
     IDLE, // new MachineState("IDLE", 1)
-    BLOCKED
+    BLOCKED;
 }
 
 

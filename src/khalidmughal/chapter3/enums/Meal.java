@@ -28,10 +28,16 @@ public enum Meal {
          */
         this.hour = hour;
         this.min = min;
+        if(hour >= 12) {
+            this.meridien =  Meridien.PM;
+            this.hour = hour - 12;
+        } else {
+            this.meridien = Meridien.AM;
+        }
     }
 
-    @Override
+
     public String toString() {
-        return String.format("%s, at %d:%d", this.name(), hour, min);
+        return String.format("%s, at %d:%d %s", this.name(), hour, min, meridien);
     }
 }
