@@ -12,7 +12,7 @@ public class Cat extends Animal {
 
     }
 
-    public String sound() { //
+    public final String sound() { //
         return "meow";
     }
 
