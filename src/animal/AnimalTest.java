@@ -1,10 +1,14 @@
 package animal;
 
+import animal.cat.BlackCat;
 import animal.cat.Cat;
 import animal.dog.Dog;
 
 public class AnimalTest {
     public static void main(String[] args) {
+
+        BlackCat blackCat = null;
+        double pi = Math.PI;
 
 
         System.out.println(Animal.ABCD);

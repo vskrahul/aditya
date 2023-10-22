@@ -39,6 +39,8 @@ class CustomerIntegerWrapperClass {
 
 
 class Employee {
+
+    Employee[] employees;
     String firstName;
     String lastName;
     int age;
