@@ -2,7 +2,9 @@ package khalidmughal.chapter3.array;
 
 /**
  * 1. Declaration
- * - We are just declaration a variable of type array, nothing is being created in the memory
+ * - We are just declaring a variable of type array, nothing is being created in the memory
+ *
+ * int[] arr; //declaration
  *
  * 2. Initialization with SIZE
  * - Array of given SIZE being created in the memory
@@ -51,7 +53,13 @@ public class ArrayUtil {
         declaration = new int[]{1, 2, 3, 5};
     }
 
+    @Override
+    public String toString() {
+        return ">>> Hello I'm ArrayUtil Class.";
+    }
+
     static void toString(int[] arr) {
+        System.out.println("executing toString(int[] arr);");
         System.out.print("[");
         for(int i = 0; i < arr.length; i++) {
             if(i == arr.length - 1) {
@@ -63,6 +71,7 @@ public class ArrayUtil {
         System.out.println("]");
     }
     static void toString(Object[] arr) {
+        System.out.println("Executing toString(Object[] arr)");
         System.out.print("[");
         for(int i = 0; i < arr.length; i++) {
             if(i == arr.length - 1) {
@@ -74,13 +83,34 @@ public class ArrayUtil {
         System.out.println("]");
     }
 
+    static void incrementMe(int i) {
+        i = i + 1;
+        System.out.println(i); // 6
+    }
+    static void incrementMe(int[] arr) {
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] + 1;
+        }
+    }
+
     public static void main(String[] args) {
         ArrayUtil arrayUtil = new ArrayUtil();
-        toString(arrayUtil.declaration);
-        toString(arrayUtil.intArr);
+        //toString(arrayUtil.declaration);
+        /*toString(arrayUtil.intArr);
         toString(arrayUtil.integerArr);
         System.out.println(arrayUtil.emptyIntArray.length);
         toString(arrayUtil.emptyIntArray);
-        toString(arrayUtil.emptyIntegerArray);
+        toString(arrayUtil.emptyIntegerArray);*/
+
+        //System.out.println(arrayUtil);
+
+
+        int x = 5;
+        incrementMe(5);
+        System.out.println(x);
+
+        int xx[] = {1, 2, 3, 4};
+        incrementMe(xx);
+        toString(xx);
     }
 }

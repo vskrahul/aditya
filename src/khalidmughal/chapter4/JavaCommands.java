@@ -1,5 +1,7 @@
 package khalidmughal.chapter4;
 
+import static khalidmughal.chapter4.SystemInfo.ONE;
+
 public class JavaCommands {
     public static void main(String[] args) {
         System.out.println("src/animal > javac JavaCommands.java");
@@ -14,6 +16,10 @@ public class JavaCommands {
         System.out.println('a');
         System.out.println("string");
         System.out.println(100);
+
+
+       /* System.out.println(SystemInfo.ONE);
+        System.out.println(ONE);*/
 
 
     }
