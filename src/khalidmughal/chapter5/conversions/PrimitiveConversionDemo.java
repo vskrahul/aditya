@@ -18,8 +18,8 @@ public class PrimitiveConversionDemo {
          * byte b = (byte)s; // narrowing with casting
          * Meaning - we are accepting possible loss of value conversion.
          */
-        byte b = (byte)s;
-        int i = s;
+        byte b = (byte)s; // NARROWING
+        int i = s; // WIDENING
 
         System.out.println(String.format("short s = %d", s));
         System.out.println("byte b = (byte)s => " + b);

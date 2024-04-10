@@ -20,12 +20,12 @@ package khalidmughal.chapter5.conversions;
  */
 public class BoxingUnBoxing {
     public static void main(String[] args) {
-        //Boxing
+        //Boxing: PRIMITIVE  ----> NON-PRIMITIVE
         int i = 12;
         Integer ii = Integer.valueOf(i);
 
-        //UnBoxing
-        Integer xx = 100;
-        int x = xx.intValue();
+        //UnBoxing: NON-PRIMITIVE  ----> PRIMITIVE
+        Integer xx = 100; // NON PRIMITIVE
+        int x = xx.intValue(); // PRIMITIVE
     }
 }
