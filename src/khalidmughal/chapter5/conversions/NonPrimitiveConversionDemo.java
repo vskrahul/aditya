@@ -15,7 +15,7 @@ public class NonPrimitiveConversionDemo {
          * Dog d = tommy;
          * Dog dd = pussy;
          */
-        Dog d = (Dog)tommy; // WE CALL IT TYPE CAST
+        Dog d = (Dog)pussy; // WE CALL IT TYPE CAST
         System.out.println(d); // "Tommy Dog"
         System.out.println(d instanceof Dog); // true
 
