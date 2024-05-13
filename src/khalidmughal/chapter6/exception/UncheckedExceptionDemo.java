@@ -8,7 +8,7 @@ package khalidmughal.chapter6.exception;
  * 2) UnChecked exception not necessarily to be handled, compiler will not complaint if not handled.
  *
  */
-public class UncheckedExceptionDemo {
+public class UncheckedExceptionDemo extends Object{
 
     static String nullPointerDemo(String s) {
         try {
@@ -21,13 +21,22 @@ public class UncheckedExceptionDemo {
     public static void main(String[] args) {
         String validString = "something";
         String invalidString = null;
-        System.out.println(nullPointerDemo(invalidString));
+        try {
+            System.out.println(nullPointerDemo(invalidString));
+        } catch (Exception e) {
+            System.out.println("error");
+        }
     }
+
 }
 
-class CustomUnCheckedException extends RuntimeException {
+class CustomUnCheckedException extends RuntimeException  {
     public CustomUnCheckedException(String message) {
         super(message);
+    }
+
+    protected void finalize() throws Throwable {
+        System.out.println("garbage cleanup");
     }
 }
 

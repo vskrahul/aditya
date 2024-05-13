@@ -1,7 +1,6 @@
 package khalidmughal.chapter6.exception;
 
 import java.io.IOError;
-import java.io.IOException;
 
 public class IndexOutOfBoundExceptionDemo {
 
@@ -9,6 +8,7 @@ public class IndexOutOfBoundExceptionDemo {
         /**
          * 1. Use multiple catch block when we have different error handling logic for each tyep of Exception
          * 2. Multiple Catch block must be define in child to parent class hierarchy
+
          */
         try {
             System.out.println("open connection");
